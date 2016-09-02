@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="format-detection" content="telephone=no" />
+	<script src="../js/jquery.min.js"></script>
+	<title>我的预约</title>
+	<style type="text/css">
+		body{
+			margin:0;
+			padding:0;
+			background-color:rgb(243, 243, 243);
+			font-family: "微软雅黑";
+			overflow:hidden;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style:none;
+		}
+		.clearfix:after,
+		.clearfix:before{
+			content: "";
+			display: table;
+		}
+		.clearfix:after{
+			clear:both;
+		}
+        .header{
+        	background-color:#fff;
+        	padding:2px 3px;
+        	width:100%;
+        	line-height:3em;
+        	border-bottom:1px solid #ccc;
+        }
+        .header .back-btn{
+        	font-size:1em;
+        	color:#a0a0a0;
+        	position: absolute;
+        	left:0.5em;
+        }
+        .header .back-btn img{
+          width:10px;
+          vertical-align:middle;
+        }
+        .header .yuyue-btn{
+        	display:inline-block;
+        	width:100%;
+           text-align:center;
+           font-size:1.2em;
+           color:#04934b;
+        }
+        .container{
+        	width:100%;
+        	height:100%;
+        	position:relative;
+        	bottom:0;
+        }
+        .container .s-title{
+        	width:100%;
+        	margin-top:1em;
+        }
+        .container .s-title img{
+            width:100%;
+        }
+        .container .s-circle{
+        	width:100%;
+        }
+        /*.container .s-circle ul{
+        	padding:0;
+        	width:300px;
+        	margin:0 auto;
+        }
+        .container .s-circle ul li{
+        	float:left;
+        	padding:16px;
+        	
+        }
+        .container .s-circle ul li a{
+        	display:table-cell;
+        	width:58px;
+        	height:58px;
+        	border-radius:50%;
+        	border:2px solid #ccc;
+        	text-align:center;
+        	vertical-align:middle;
+          color:#333; 
+        }*/
+        .container .s-circle ul{
+          padding:0;
+          width:95%;
+          margin:0 auto;
+        }
+        .container .s-circle ul li{
+          float:left;
+          width:33%;
+          text-align:center;
+          margin:10px 0;
+          
+        }
+        .container .s-circle ul li a{
+          display:inline-block;
+          width:60%;
+          border-radius:50%;
+          border:2px solid #ccc;
+          text-align:center;
+          vertical-align:middle;
+          color:#333;
+        }
+
+        .s-style{
+        	border-color: #04934b !important;
+        	color:#04934b !important;
+        }
+        .container .slidedown{
+        	position:absolute;
+        	top:0;
+        	width:100%;
+        	background-color:#60bd8e;
+        	padding:20px 0;
+        	display:none;
+        	z-index: 999;
+        }
+        .container .slidedown .sl1,
+        .container .slidedown .sl2{
+        	width:49%;
+        	display:inline-block;
+        	text-align:center;
+        }
+        .container .slidedown a{
+        	display:inline-block;
+        	width:70px;
+        	height:70px;
+        	border:2px solid #fff;
+        	color:#fff;
+        	line-height:70px;
+        	border-radius:50%;
+        	text-align: center;
+        	vertical-align: middle;
+        }
+        .on-sle{
+        	border-color: #04934b !important;
+        	color:#04934b !important;
+        }
+        .zhezhao{
+        	position:absolute;
+        	width:100%;
+        	height:180%;
+        	background-color:rgba(208, 207, 208, 0.7);
+        	display:none;
+        	z-index: 99;
+        }
+	</style>
+</head>
+<body>
+   
+   	  <div class="header">
+   	  	<a class="back-btn" href="index.html"><img src="images/back.png"> 返回</a>
+   	  	<a class="yuyue-btn">预约<img src="images/down.png"></a>
+   	  </div>
+   	  <div class="container clearfix">
+   	  	<div class="slidedown">
+   	  	  <div class="sl1">
+   	  		<a class="on-sle" href="myappoint.html">预约</a>
+   	  	  </div>
+   	  	  <div class="sl2">	
+   	  		<a href="javascript:;">我的预约</a>
+   	  	  </div>	
+   	  	</div>
+   	  	<div class="zhezhao">
+   	  		
+   	  	</div>
+   	  	<div class="select-city">
+   	  		<div class="s-title">
+   	  			<img src="images/select.png">
+   	  		</div>
+   	  		<div class="s-circle clearfix">
+   	  			<ul class="clearfix">
+   	  				<li><a class="s-style" href="jiaolian.html">北京</a></li>
+   	  				<li><a href="javascript:;">上海</a></li>
+   	  				<li><a href="javascript:;">西安</a></li>
+   	  				<li><a href="javascript:;">北京</a></li>
+   	  				<li><a href="javascript:;">上海</a></li>
+   	  				<li><a href="javascript:;">西安</a></li>
+   	  				<li><a href="javascript:;">北京</a></li>
+   	  				<li><a href="javascript:;">上海</a></li>
+   	  				<li><a href="javascript:;">西安</a></li>
+   	  				<li><a href="javascript:;">北京</a></li>
+   	  				<li><a href="javascript:;">上海</a></li>
+   	  				<li><a href="javascript:;">西安</a></li>
+   	  				<li><a href="javascript:;">北京</a></li>
+   	  				<li><a href="javascript:;">上海</a></li>
+   	  				<li><a href="javascript:;">西安</a></li>
+   	  				
+   	  			</ul>
+   	  		</div>
+   	  	</div>
+   	  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  	$(".yuyue-btn").click(function(){
+  		$(".slidedown").toggle();
+  		$(".zhezhao").toggle();
+  		
+  	})
+  	$(".s-circle ul li a").click(function(){
+  		$(this).addClass("s-style").parent().siblings().children().removeClass("s-style");
+  		
+  	})
+    
+    var $width = $(".container .s-circle ul li a").width();
+    $(".container .s-circle ul li a").css({"height":$width})
+    $(".container .s-circle ul li a").css({"line-height":$width+'px'})
+  })
+  </script>
+</body> 
+</html>

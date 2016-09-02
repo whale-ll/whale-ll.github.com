@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/duokan.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/jingpin.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="js/duokan.js"></script>
+	<script src="js/jingpin.js"></script>
+   <script src="js/top.js"></script>
+	<title>精品推荐</title>
+</head>
+<body>
+    <div class="header">
+   <div class="m-header">
+ 	<div class="head-nav">
+ 		<nav class="m-nav">
+ 	       <a href="#">小米网</a><span>|</span>
+ 	       <a href="#">MIUI</a><span>|</span>
+ 	       <a href="#">米聊</a><span>|</span>
+ 	       <a href="#">游戏</a><span>|</span>
+ 	       <a class="on-a" href="#">多看阅读</a><span>|</span>
+ 	       <a href="#">云服务</a><span>|</span>
+ 	       <a href="#">小米网移动版</a>
+ 		</nav>
+ 	</div>
+ 	<ul class="head-right">
+ 		<li><a class="login" href="#">登录 /</a><a href="#">注册</a></li><li>|</li>
+ 		<li><a href="#">购物车</a></li><li>|</li>
+ 		<li class="onblock"><a href="#">关注</a>
+ 		    <div class="erweima">
+ 		       <table>
+ 		         <tbody>
+ 		         	<tr>
+ 		         		<td><img src="img/weixin1.png"><span>官方微信</span></td>
+ 		         		<td><img src="img/weibo.png"><span>官方微博</span></td>
+ 		         	</tr>
+ 		         </tbody>
+ 		      </table>
+ 		</li>
+ 		<li>|</li>
+ 		<li class="onlist"><a href="#">快速导航</a>
+             <ul class="boklist">
+             	<li><a href="">兑换码换书</a></li>
+             	<li><a href="">最新上架</a></li>
+             </ul>
+ 		</li>
+ 	</ul>
+   </div>
+ </div>
+   
+   <div class="banner">
+   	  <div class="ban-top">
+   	  	 <div class="ban-top-left">
+   	  	 	<img class="logopic" src="img/logo.png"><h2>多看阅读</h2>
+   	  	 </div>
+   	  	 <div class="ban-top-right">
+   	  	 	<input id="soubook" type="text" placeholder="搜索书名或作者">
+   	  	 </div>
+   	  </div>
+      <div class="ban-bot">
+      	<nav class="ban-nav">
+      		<a href="index.html">首页</a>
+      		<a href="bangdan.html">榜单</a>
+      		<a href="shuping.html">书评</a>
+      		<a class="navstyle" href="#">精品·免费</a>
+      		<a href="#">分类</a>
+      		<a href="#">客户端</a>
+      		<a href="#">论坛</a>
+      	</nav>
+      </div>
+   </div>
+   <!--以上通用部分-->
+   <div class="jing-container clearfix">
+   	   <div class="bar jing-sidebar">
+   	     <h2>精品免费</h2>
+   	   	 <ul>
+   	   	 	<li class="bangstyle"><a href="#">精品推荐</a></li>
+   	   	 	<li><a href="#">特价图书</a></li>
+   	   	 	<li><a href="#">免费专区</a></li>
+   	   	 </ul>
+   	   </div>
+
+   	   <div class="bar jing-content">
+   	   	   <h2>精品推荐</h2>
+   	   	   <ul class="jing-list clearfix">
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_07.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-half.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_05.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-half.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_07.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_05.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_07.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_14.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_07.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_05.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_07.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_05.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_07.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-off.png">
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_14.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-half.png">
+   	   	   	  			
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_07.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-half.png">
+   	   	   	  			
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   	  <li class="cleafix">
+   	   	   	  	<div class="jing jing-spic">
+   	   	   	  		<a href="#"><img src="img/mak/p_05.png"></a>
+   	   	   	  		<p>￥19.99<span>￥88.00</span></p>
+   	   	   	  	</div>
+   	   	   	  	<div class="jing jing-stxt">
+   	   	   	  		<a href="#">巨人的陨落（共3册）</a><br>
+   	   	   	  		<span>【英】肯·福莱特</span>
+   	   	   	  		<div class="icon">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  			<img src="img/images/star-on.png">
+   	   	   	  		
+   	   	   	  		</div>
+   	   	   	  		<p>碾压全球畅销榜的伟大故事，全球每三秒卖出一本</p>
+   	   	   	  	</div>
+   	   	   	  </li>
+   	   	   </ul>
+   	   </div>
+   	   <div class="pages clearfix">
+   	   	   <a class="pre">上一页</a>
+   	   	   <a class="pagestyle" href="#">1</a>
+   	   	   <a href="#">2</a>
+   	   	   <a href="#">3</a>
+   	   	   <a href="#">4</a>
+   	   	   <a class="pre" href="#">下一页</a>
+   	   </div>
+   </div> 
+   
+    <!--通用底部-->
+   <hr>
+   <div class="footer">
+ 	 <div class="fo-left">
+ 	 	 <nav>
+ 	 	 	<a href="#">手机版</a><span>|</span>
+ 	 	 	<a href="#">关于我们</a><span>|</span>
+ 	 	 	<a href="#">联系我们</a><span>|</span>
+ 	 	 	<a href="#">商务合作</a>
+ 	 	 </nav>
+ 	 	 <div class="copyright">
+ 	 	 	<span>Copyright&copyduokan.com</span><a href="#">京ICP备10047083</a><a href="#">电复证字第01D010号</a>
+ 	 	 </div>
+ 	 </div>
+ 	 <div class="twotopic">
+ 	 	<a href="#"><img src="img/weibo2.jpg" style="width:45px;height:45px"></a>
+ 	 	<a href="#"><img src="img/weixin2.jpg"></a>
+ 	 </div>
+ 	 <div class="fo-right">
+ 	 	<h6>意见反馈</h6>
+ 	 	<a href="#">readerfeedback@duokan.com</a>
+ 	 </div>
+    <div class="toTop">
+         <img src="img/up.png">
+    </div>  
+</body>
+</html>

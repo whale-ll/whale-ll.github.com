@@ -1,0 +1,28 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #fff;
+	width:100%;
+	font-family: "微软雅黑";
+}
+ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
