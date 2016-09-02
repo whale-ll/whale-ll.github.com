@@ -1,0 +1,136 @@
+body{
+	background:#fbfaf8;
+	font-family: arial,"Microsoft Yahei",sans-serif;
+}
+.shu{
+	float:left;
+}
+.shuping-container{
+	width:1000px;
+	margin:30px auto;
+}
+.shuping-content{
+	width:70%;
+}
+.shuping-content h2{
+	color:#333;
+}
+.shuping-content ul{
+	margin-top:10px;
+}
+.shuping-content ul li{
+	padding:25px 0;
+	width:100%;
+	border-top:1px solid #ebe7e2;
+	border-bottom:1px solid #ebe7e2;
+}
+.shuping-content ul .shupic{
+	float:left;
+	width:20%;
+	text-align:center;
+}
+.shuping-content ul .shupic a{
+	font-size:12px;
+	color:#333;
+	font-weight:bold;
+}
+.shuping-content ul .shupic img{
+	width:100px;
+	display:block;
+	margin:0 auto 10px;
+	box-shadow:1px 4px 5px gray;
+}
+.shuping-content ul .pingtxt{
+	float:left;
+	width:75%;
+}
+.shuping-content ul .pingtxt h5{
+	color: #613f23;
+	margin-bottom:10px;
+}
+.shuping-content ul .pingtxt p{
+	font-size:14px;
+	line-height:24px;
+	color:#666;
+}
+.shu-sidebar{
+	width:25%;
+	margin-left:10px;
+	margin-top:10px;
+}
+.shu-sidebar h4{
+	padding-left:20px;
+}
+.shu-sidebar ul{
+     padding-top:20px;
+     padding-left:20px;
+}
+.shu-sidebar ul li{
+	margin-bottom:20px;
+}
+.shu-sidebar ul .small-shu{
+	float:left;
+	width:40%;
+}
+.shu-sidebar ul .small-shu img{
+	width:80px;
+}
+.shu-sidebar ul .small-txt{
+	float: left;
+	width:55%;
+}
+.shu-sidebar ul .small-txt a{
+	font-size:14px;
+	color:#613f23;
+}
+.shu-sidebar ul .small-txt p{
+	color:#a0a0a0;
+	font-size:13px;
+	margin:5px 0;
+}
+.shu-sidebar ul .small-txt em{
+	font-style:normal;
+	font-size:12px;
+	font-weight:bold;
+}
+.shu-sidebar ul .small-txt span{
+	color:#a0a0a0;
+	font-size: 12px;
+	text-decoration:line-through;
+}
+.shu-sidebar .more-shu a{
+	color:#613f23;
+	font-size: 12px;
+}
+hr{
+	color:gray;
+	box-shadow:0 2px 5px gray;
+}
+.page-btn{
+	width:300px;
+	margin:20px auto;
+	text-align:center;
+	font-size:14px;
+}
+.page-btn a{
+	display:inline-block;
+	width:100px;
+	background-color: #fa7a20;
+	color:#fff;
+	border-radius:5px;
+	padding:5px 0;
+}
+
+ .toTop{
+         width:50px;
+         height:50px;
+         background-color:#ccc;
+         position:fixed;
+         bottom:50px;
+         right:5px;
+         cursor:pointer;
+      }
+      .toTop img{
+         width:50px;
+
+      }

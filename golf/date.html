@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.3.2.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>预约日期</title>
+	<style type="text/css">
+	    body{
+	    	font-family:"微软雅黑";
+	    }
+		.date-content{
+			width:100%;
+			margin-top: 50px;
+		}
+		.date-content h3{
+			margin:0;
+			width:100%;
+			text-align:center;
+			font-size:1.4em;
+			color:#939393;
+			line-height:55px;
+			font-weight:normal;
+			border-bottom:1px solid #eee;
+		}
+		.date-content table{
+			width:98%;
+			text-align:center;
+			font-size: #333;
+			line-height:2.5em;
+			border-bottom:1px solid #eee;
+		}
+		.date-content table th{
+			font-size:1.3em;
+			color:#2cd4c4;
+		}
+		.date-content table td{
+			font-size:1.2em;
+		}
+		.circle-style{
+			border-radius:50%;
+			background-color:#ff623d; 
+		}
+		.no-touch{
+			color:#c0c0c0;
+		}
+        .pages{
+        	display:none;
+        }
+		.page2{
+			width:100%;
+			background-color: #fff;
+		}
+		.top2{
+			line-height:50px;
+			border-bottom:1px solid #eee;
+			background-color: #fff;
+		}
+        .top2 a{
+            font-size:1em;
+            color:#a0a0a0 !important;
+            left:10px;
+            display:inline-block;
+            width:18%;
+            
+        }
+        .back-btn{
+            color:#a0a0a0 !important;
+            font-size:1em;
+          
+        }
+        .top2 .backto{
+        	text-align:left;
+        }
+        .top2 .quxiao{
+        	text-align:right;
+        }
+        .top2 span{
+        	display:inline-block;
+        	width:59%;
+        	text-align:center;
+        	font-size:1.3em;
+        	color: #04934b !important;
+        }
+        .date-time{
+        	width:95%;
+        	margin:0 auto 70px;
+        }
+        .date-time h3{
+        	margin:0;
+        	font-size:1.3em;
+        	color:#a1a1a1;
+        	text-align:center;
+        	font-weight:normal;
+        	line-height:55px;
+        	border-bottom:1px solid #eee;
+        }
+        .date-time li{
+            position: relative;
+        	width:100%;
+        	border-bottom:1px solid #eee;
+        }
+        .date-time li time{
+        	display:inline-block;
+        	width:80%;
+        	font-size:1.3em;
+        	text-indent:20px;
+        	line-height:60px;
+        }
+        .date-time li a{
+        	position:absolute;
+            display:inline-block;
+            width:35px;
+            height:35px;
+            top:15px;
+        }
+        .offstyle{
+        	background:url(images/no1.png) no-repeat;
+            background-size:contain;
+        }
+        .onstyle{
+        	background:url(images/yes1.png) no-repeat;
+        	background-size:contain;
+        }
+ 
+        .ad{
+			width:100%;
+			background-color: #21ae5d;
+			box-sizing:border-box;
+			padding:10px 15px;
+			font-size:0.9em;
+			color:#fff;
+			text-align:center;
+			position:fixed;
+			top:50px;
+			z-index:20;
+		}
+		.ad img{
+			width:23px;
+			vertical-align:middle;
+		}
+        .ball-content{
+        	width:100%;
+        	margin-top:90px;
+
+        }
+        .ball-content .park-pic{
+        	width:100%;
+        	overflow:hidden;
+        	position:relative;
+        }
+        .ball-content .park-pic img{
+        	width:100%;
+        }
+        .park-pic title{
+        	display:block;
+        	position:absolute;
+        	top:40%;
+        	width:100%;
+        	text-align: center;
+        	color:#fff;
+        	font-size:1.2em;
+        }
+        .park-pic span{
+        	display:block;
+        	position: absolute;
+        	color:#fff;
+        	background-color:rgba(31,31,31,.6);
+        	top:10%;
+        	padding:5px;
+        }
+        .park-pic a{
+        	position:absolute;
+        	display:inline-block;
+            width:35px;
+            height:35px;
+            z-index:1;
+            top:20px;
+            right:20px;
+        }
+        .park-txt{
+        	font-size:0.8em;
+        	padding:10px 0;
+        	text-indent:3px;
+        }
+        .park-txt img{
+        	width:20px;
+        	vertical-align: middle;
+        	margin-left:5px;
+        	padding-bottom:20px;
+        }
+        .park-txt a{
+        	margin-left:20px;
+        	color:#21ae5d;
+        	font-size:1.1em;
+        }
+        .park-last{
+        	margin-bottom:70px;
+        }
+        .page4{
+        	width:100%;
+        	background-color:#eee;
+        }
+        .twotalk{
+        	width:100%;
+        	margin-top:30px;
+
+        }
+        .twotalk .talk1,
+        .twotalk .talk2{
+        	width:85%;
+        	margin:20px auto;
+        	text-align:center;
+        	background-color:#fff;
+        	font-size: 1.1em;
+        	color:#a0a0a0;
+        	line-height:60px;
+        	position: relative;
+        }
+        .twotalk .talk1 a,
+        .twotalk .talk2 a{
+        	display:inline-block;
+            width:35px;
+            height:35px;
+            vertical-align:middle;          
+        }
+        .zhuangbei{
+        	width:100%;
+        	margin-top:20px;
+
+        }
+        .zhuangbei h3{
+        	
+        	font-weight:normal;
+        	font-size:1.3em;
+        	color:gray;
+        }
+        .zhuangbei ul{
+        	width:90%;
+        	margin:0 auto;
+        }
+        .zhuangbei ul li{
+        	width:100%;
+        	font-size:1.2em;
+        	color:#c0c0c0;
+        	border-bottom:1px solid #fff;
+        	line-height:40px;
+        }
+        .zhuangbei ul li p{
+        	display:inline-block;
+        	margin:0;
+        	width:70%;
+        }
+        .zhuangbei ul li span{
+        	display:inline-block;
+        	width:29%;
+        	text-align:right;
+        }
+        .zhuangbei .zhuang-price{
+        	width:90%;
+        	margin:0 auto;
+        	font-size:1.4em;
+        	line-height:60px;
+        	text-align:right;
+        	color:#c0c0c0;
+        	padding-bottom:50px;
+
+        }
+        .zhuangbei .zhuang-price span{
+        	color:#2cd4c4;
+        }
+        .personal{
+        	width:90%;
+        	margin:20px auto;
+        }
+        .personal label{
+        	display:block;
+        	font-size:1.4em;
+        	color:#a0a0a0;
+        	font-family:"微软雅黑";
+        	margin:10px 0;
+
+        }
+        .personal input{
+        	width:100%;
+        	height:40px;
+        	border:1px solid #fff;
+        	font-family:"微软雅黑";
+        }
+        .personal input::-webkit-input-placeholder{
+        	color:#e0e0e0;
+        	font-size:1.2em;
+        }
+        textarea{
+        	width:100%;
+        	height:100px;
+        	border:1px solid #fff;
+        	font-family:"微软雅黑";
+        	resize:none;
+        }
+        textarea::-webkit-input-placeholder{
+        	font-size:1.2em;
+        	color:#e0e0e0;
+        }
+        .footer a{
+            color:#fff !important;
+            font-size:1.1em !important;
+        }
+	</style>
+</head>
+<body>
+    <div data-role="page" id="pageone" class="page1">
+     <div class="top">
+     	<a class="back-btn" data-ajax="false" href="jiaolian.html">返回</a>
+     	<span>预约日期</span>
+     </div>
+     <div class="date-content">
+     	<table class="date1">
+     		<h3>2015年5月</h3>
+     		<thead>
+     			<th>日</th>
+     			<th>一</th>
+     			<th>二</th>
+     			<th>三</th>
+     			<th>四</th>
+     			<th>五</th>
+     			<th>六</th>
+     		</thead>
+     		<tbody>
+     			<tr>
+     				<td>26</td>
+     				<td>27</td>
+     				<td>28</td>
+     				<td>29</td>
+     				<td>30</td>
+     				<td>1</td>
+     				<td>2</td>
+     			</tr>
+     			<tr>
+     				<td>3</td>
+     				<td>4</td>
+     				<td>5</td>
+     				<td>6</td>
+     				<td>7</td>
+     				<td>8</td>
+     				<td>9</td>
+     			</tr>
+     			<tr>
+     				<td>10</td>
+     				<td>11</td>
+     				<td>12</td>
+     				<td>13</td>
+     				<td>14</td>
+     				<td>15</td>
+     				<td>16</td>
+     			</tr>
+     			<tr>
+     				<td>17</td>
+     				<td>18</td>
+     				<td>19</td>
+     				<td>20</td>
+     				<td>21</td>
+     				<td>22</td>
+     				<td>23</td>
+     			</tr>
+     			<tr>
+     				<td>24</td>
+     				<td>25</td>
+     				<td>26</td>
+     				<td>27</td>
+     				<td>28</td>
+     				<td>29</td>
+     				<td>30</td>
+     			</tr>
+     			<tr>
+     				<td>31</td>
+     				<td></td>
+     				<td></td>
+     				<td></td>
+     				<td></td>
+     				<td></td>
+     				<td></td>
+     			</tr>
+     		</tbody>
+     	</table>
+
+     	<table class="date2">
+     		<h3>2015年6月</h3>
+     		<thead>
+     			<th>日</th>
+     			<th>一</th>
+     			<th>二</th>
+     			<th>三</th>
+     			<th>四</th>
+     			<th>五</th>
+     			<th>六</th>
+     		</thead>
+     		<tbody>
+     			<tr>
+     				<td>31</td>
+     				<td>1</td>
+     				<td>2</td>
+     				<td>3</td>
+     				<td>4</td>
+     				<td>5</td>
+     				<td>6</td>
+     			</tr>
+     			<tr>
+     				<td>7</td>
+     				<td>8</td>
+     				<td>9</td>
+     				<td>10</td>
+     				<td>11</td>
+     				<td>12</td>
+     				<td>13</td>
+     			</tr>
+     			<tr>
+     				<td>14</td>
+     				<td>15</td>
+     				<td>16</td>
+     				<td>17</td>
+     				<td>18</td>
+     				<td>19</td>
+     				<td>20</td>
+     			</tr>
+     			<tr>
+     				<td>21</td>
+     				<td>22</td>
+     				<td>23</td>
+     				<td>24</td>
+     				<td>25</td>
+     				<td>26</td>
+     				<td>27</td>
+     			</tr>
+     			<tr>
+     				<td>28</td>
+     				<td>29</td>
+     				<td>30</td>
+     				<td></td>
+     				<td></td>
+     				<td></td>
+     				<td></td>
+     			</tr>
+     		</tbody>
+     	</table>
+     </div>
+     <div class="footer"><a href="#pagetwo">下一步</a></div>
+    </div> 
+     <!--第二页-->
+     <div data-role="page" id="pagetwo" class="page2 clearfix">
+        <div class="top2 clearfix">
+        	<a class="backto" href="#pageone">上一步</a>
+        	<span>预约时间段</span>
+        	<a class="quxiao" href="jiaolian.html">取消</a>
+        </div>
+     	<ul class="date-time clearfix">
+     	    <h3>2015年5月12日</h3>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     		<li><time>9:30~10:30</time><a class="offstyle" href="javascript:;"></a></li>
+     	</ul>
+     	 <div class="footer"><a href="#pagethree">下一步</a></div>
+     </div>
+     <!--第三页-->
+     <div data-role="page" id="pagethree" class="page3">
+     	<div class="top clearfix">
+	    	<a class="back-btn" href="#pagetwo"><img src="images/back.png">上一步</a>
+	    	<span>合作球场</span>
+        </div>
+    <div class="ad">
+    	<img src="images/baidu.png">
+    	<span>百度为以下球场免费提供10盒练习球</span>
+    </div>
+    <div class="ball-content">
+    	<div class="park-1">
+    	    <div class="park-pic">
+	    		<img src="images/area.jpg">
+	    		<title>大连金石高尔夫俱乐部</title>
+	    		<span>￥300/h</span>
+	    		<a class="offstyle" href="javascript:;"></a>
+	    	</div>
+    		<div class="park-txt">
+    		    <img src="images/location.png">
+	    		<span>大连金石滩国家旅游度假区海滨路2号</span>
+	    		<a>位置</a>
+    		</div>
+    	</div>
+    	<div class="park-1">
+    	    <div class="park-pic">
+	    		<img src="images/area.jpg">
+	    		<title>大连金石高尔夫俱乐部</title>
+	    		<span>￥300/h</span>
+	    		<a class="offstyle" href="javascript:;"></a>
+	    	</div>
+    		<div class="park-txt">
+    		    <img src="images/location.png">
+	    		<span>大连金石滩国家旅游度假区海滨路2号</span>
+	    		<a>位置</a>
+    		</div>
+    	</div>
+    	<div class="park-1 park-last">
+    	    <div class="park-pic">
+	    		<img src="images/area.jpg">
+	    		<title>大连金石高尔夫俱乐部</title>
+	    		<span>￥300/h</span>
+	    		<a class="offstyle" href="javascript:;"></a>
+	    	</div>
+    		<div class="park-txt">
+    		    <img src="images/location.png">
+	    		<span>大连金石滩国家旅游度假区海滨路2号</span>
+	    		<a>位置</a>
+    		</div>
+    	</div>
+    </div>
+     <div class="footer"><a href="#pagefour">下一步</a></div>
+     </div>
+     <!--page4-->
+     <div data-role="page" id="pagefour" class="page4 ">
+     	<div class="top2">
+     		<a class="backto" href="#pagethree">上一步</a>
+     		<span>装备服务</span>
+     		<a class='quxiao' href="">取消</a>
+     	</div>
+
+     	<div class="twotalk">
+     		<div class="talk1 clearfix">
+     			<a class="offstyle" href="javascript:;"></a>
+     			<span>已有装备，无需教练提供</span>
+     		</div>
+     		<div class="talk2 clearfix">
+     			<a class="offstyle" href="javascript:;"></a>
+     			<span>没有装备，需要教练提供</span>
+     		</div>
+     	</div>
+     	<div class="zhuangbei">
+     		<ul>
+     			<h3>装备如下：</h3>
+     			<li>
+     				<p>NikeGolf</p><span>14件/套</span>
+     			</li>
+     			<li>
+     				<p>Callaway/卡拉威</p><span>6件/套</span>
+     			</li>
+     			<li>
+     				<p>DUNLOP/登路普</p><span>14件/套</span>
+     			</li>
+     			<li>
+     				<p>Taylormade</p><span>14件/套</span>
+     			</li>
+     		</ul>
+
+     		<p class="zhuang-price">费用：<span>￥300</span></p>
+     	</div>
+     	 <div class="footer"><a href="#pagefive">下一步</a></div>
+     </div>
+     
+     <div data-role="page" id="pagefive" class="page5">
+     	<div class="top2">
+     		<a class="backto" href="#pagefour">上一步</a>
+     		<span>填写个人信息</span>
+     		<a data-ajax="false" class="quxiao" href="jiaolian.html">取消</a>
+     	</div>
+        
+        <div class="personal">
+        	<form>
+        		<label>联系电话：</label>
+        		<input data-role="none" type="text" name="number" placeholder="请输入您的电话">
+        		<label>联系人：</label>
+        		<input  data-role="none" type="text" name="uesername" placeholder="请输入您的姓名">
+        		<label>留言：</label>
+        		<textarea data-role="none" placeholder="请输入您要给教练的留言"></textarea>
+        	</form>
+        </div>
+        
+
+
+        <div class="footer"><a data-ajax="false" href="details.html">提交</a></div>
+     </div>
+
+     <script type="text/javascript">
+     	$(".date-content .date1 tbody td:lt(5)").addClass("no-touch");
+     	$(".date-content .date1 tbody td:gt(4)").click(function(){
+     		$(this).addClass("circle-style").siblings().removeClass("circle-style").parent().siblings().children().removeClass("circle-style")
+     	});
+     	$(".date-content .date2 tbody td:lt(1)").addClass("no-touch");
+     	$(".date-content .date2 tbody td:gt(0)").click(function(){
+     		$(this).addClass("circle-style").siblings().removeClass("circle-style").parent().siblings().children().removeClass("circle-style")
+     	});
+     	$(".date-content .date2").css("margin-bottom","70px");
+
+        $(".date-time li a").click(function(){
+        	$(this).addClass("onstyle").parents('li').siblings().children("a").removeClass("onstyle")
+        })
+        $(".park-pic a").click(function(){
+        	$(this).addClass("onstyle").parents('.park-1').siblings().children(".park-pic").find("a").removeClass("onstyle")
+        })
+        $(".footer").click(function(){
+
+        })
+     </script>
+</body>
+</html>
