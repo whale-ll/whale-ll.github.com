@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="format-detection" content="telephone=no" />
+	<script src="js/jquery-3.0.0.js"></script>
+	<title>预约表</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+		.top{
+			width:100%;
+			background-color:#fff;
+			line-height:50px;
+			border-bottom:1px solid #e0e0e0;
+			position:fixed;
+			top:0;
+		}
+       .table-content{
+       	    width: 100%;
+            font-size:1.1em;
+            margin-top:50px;
+       }
+       .table-content dl{
+       	    width:100%;
+       	    margin:0;
+       	    padding:0;
+       }
+       .table-content dl dt{
+       	 line-height:50px;
+       	 text-align:center;
+       	 color:#48d2c3;
+       	 background-color: #fff;
+       }
+       .table-content dl dd{
+       	line-height:50px;
+       	color:#575d63;
+       	width:100%;
+       	margin:0;
+       	padding:0 20px;
+       	-webkit-box-sizing:border-box;
+       }
+       .table-content dl dd span{
+       	display:inline-block;
+       	float:right;
+       	color:#c0c0c0;
+
+       }
+       .table-content .odl{
+       	margin-bottom:90px;
+       }
+	</style>
+</head>
+<body>
+   <div class="top">
+   	<a class="back-btn" href="jiaolian.html"><img src="images/back.png">返回</a>
+   	<span>John William预约表</span>
+   </div>
+   <div class="table-content">
+   	  <dl>
+   	  	<dt>5月12日</dt>
+   	  	<dd>09：30<span>可预约</span></dd>
+   	  	<dd>09：30<span>已预约</span></dd>
+   	  	<dd>09：30<span>可预约</span></dd>
+   	  </dl>
+   	  <dl>
+   	  	<dt>5月13日</dt>
+   	  	<dd>09：30<span>可预约</span></dd>
+   	  	<dd>09：30<span>已预约</span></dd>
+   	  	<dd>09：30<span>可预约</span></dd>
+   	  </dl>
+   	  <dl class="odl">
+   	  	<dt>5月14日</dt>
+   	  	<dd>09：30<span>可预约</span></dd>
+   	  </dl>
+   </div>
+    <div class="footer">
+    	预约
+    </div>
+    
+    <!--上拉菜单-->
+    <div class="topdown">
+     
+    	<ul>
+    		<li><a href="">练习场教学</a></li>
+    		<li><a href="">Mini场地教学（6洞）</a></li>
+    		<li><a href="">场地教学（18洞）</a></li>
+    		<li class="quxiao"><a href="javascript:;">取消</a></li>
+    	</ul>
+       
+    </div>
+
+   <script type="text/javascript">
+   	  $(".table-content dl").eq(0).find("dd:even").css("background-color","#eee").find("span").css("color","#04934b");
+   	  $(".table-content dl").eq(1).find("dd:even").css("background-color","#eee").find("span").css("color","#04934b");
+      $(".table-content dl").eq(2).find("dd:even").css("background-color","#eee").find("span").css("color","#04934b")
+
+    	$(".footer").click(function(){
+    		$(".topdown").toggle()
+    	})
+
+       $(".quxiao").click(function(){
+       	   $(".topdown").toggle()
+       })
+
+     
+   
+   </script>
+</body>
+</html>
+
+
+	

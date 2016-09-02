@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/duokan.css">
+	<link rel="stylesheet" type="text/css" href="css/bangdan.css">
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/duokan.js"></script>
+    <script src="js/top.js"></script>
+	<title>榜单家族</title>
+</head>
+<body>
+   <div class="header">
+   <div class="m-header">
+ 	<div class="head-nav">
+ 		<nav class="m-nav">
+ 	       <a href="#">小米网</a><span>|</span>
+ 	       <a href="#">MIUI</a><span>|</span>
+ 	       <a href="#">米聊</a><span>|</span>
+ 	       <a href="#">游戏</a><span>|</span>
+ 	       <a class="on-a" href="#">多看阅读</a><span>|</span>
+ 	       <a href="#">云服务</a><span>|</span>
+ 	       <a href="#">小米网移动版</a>
+ 		</nav>
+ 	</div>
+ 	<ul class="head-right">
+ 		<li><a class="login" href="#">登录 /</a><a href="#">注册</a></li><li>|</li>
+ 		<li><a href="#">购物车</a></li><li>|</li>
+ 		<li class="onblock"><a href="#">关注</a>
+ 		    <div class="erweima">
+ 		       <table>
+ 		         <tbody>
+ 		         	<tr>
+ 		         		<td><img src="img/weixin1.png"><span>官方微信</span></td>
+ 		         		<td><img src="img/weibo.png"><span>官方微博</span></td>
+ 		         	</tr>
+ 		         </tbody>
+ 		      </table>
+ 		</li>
+ 		<li>|</li>
+ 		<li class="onlist"><a href="#">快速导航</a>
+             <ul class="boklist">
+             	<li><a href="">兑换码换书</a></li>
+             	<li><a href="">最新上架</a></li>
+             </ul>
+ 		</li>
+ 	</ul>
+   </div>
+ </div>
+  
+   <div class="banner">
+   	  <div class="ban-top">
+   	  	 <div class="ban-top-left">
+   	  	 	<img class="logopic" src="img/logo.png"><h2>多看阅读</h2>
+   	  	 </div>
+   	  	 <div class="ban-top-right">
+   	  	 	<input id="soubook" type="text" placeholder="搜索书名或作者">
+   	  	 </div>
+   	  </div>
+      <div class="ban-bot">
+      	<nav class="ban-nav">
+      		<a href="index.html">首页</a>
+      		<a class="navstyle" href="#">榜单</a>
+      		<a href="shuping.html">书评</a>
+      		<a href="#">精品·免费</a>
+      		<a href="#">分类</a>
+      		<a href="#">客户端</a>
+      		<a href="#">论坛</a>
+      	</nav>
+      </div>
+   </div>
+   <!--通用部分-->
+   <!--本页内容部分-->
+   <div class="bangdan-container clearfix">
+   	   <div class="bar sidebar">
+   	       <h2>榜单导航</h2>
+   	   	   <ul>
+   	   	   	  <li class="bangstyle"><a href="#">榜单家族</a></li>
+   	   	   	  <li><a href="#">畅销榜</a></li>
+   	   	   	  <li><a href="#">月度榜</a></li>
+   	   	   	  <li><a href="#">好评榜</a></li>
+   	   	   	  <li><a href="#">免费榜</a></li>
+   	   	   	  <li><a href="#">豆瓣好评</a></li>
+   	   	   	  <li><a href="#">当当热销</a></li>
+   	   	   	  <li><a href="#">亚马逊热销榜</a></li>
+   	   	   	  <li><a href="#">京东热销</a></li>
+   	   	   	  <li><a href="#">最新上架</a></li>
+   	   	   </ul>
+   	   </div>
+   	   <div class="bar bd-content clearfix">
+   	   	  <div class="bd bd-left">
+	   	   	  <div class="bd-head">
+	   	   	  	<h2>畅销榜</h2>
+	   	   	  	<a href="#">更多</a>
+	   	   	  </div>
+	   	   	  <ul class="changxiao">
+	   	   	  	<li>
+	   	   	  	    <em>1.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>2.</em>
+	   	   	  		<a href="#">红顶商人胡雪岩（全六册）</a>
+	   	   	  		<span>高阳</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>3.</em>
+	   	   	  		<a href="#">解忧杂货店</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>4.</em>
+	   	   	  		<a href="#">古董局中局</a>
+	   	   	  		<span>马伯庸</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>5.</em>
+	   	   	  		<a href="#">丘吉尔第二次世界大战回忆录</a>
+	   	   	  		<span>温斯顿·丘吉尔</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>6.</em>
+	   	   	  		<a href="#">雪中悍刀型</a>
+	   	   	  		<span>烽火戏诸侯</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>7.</em>
+	   	   	  		<a href="#">夏有乔木 雅望天堂</a>
+	   	   	  		<span>籽月/span>
+	   	   	  	</li>
+                <li>
+	   	   	  	    <em>8.</em>
+	   	   	  		<a href="#">明朝那些事儿</a>
+	   	   	  		<span>当年明月</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>9.</em>
+	   	   	  		<a href="#">嫌疑人X的献身</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>10.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  </ul>
+   	   	  </div>
+   	   	  <div class="bd bd-right">
+   	   	  	 <div class="bd-head">
+	   	   	  	<h2>月度榜</h2>
+	   	   	  	<a href="#">更多</a>
+	   	   	  </div>
+	   	   	  <ul class="changxiao">
+	   	   	  	<li>
+	   	   	  	    <em>1.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>2.</em>
+	   	   	  		<a href="#">红顶商人胡雪岩（全六册）</a>
+	   	   	  		<span>高阳</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>3.</em>
+	   	   	  		<a href="#">解忧杂货店</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>4.</em>
+	   	   	  		<a href="#">古董局中局</a>
+	   	   	  		<span>马伯庸</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>5.</em>
+	   	   	  		<a href="#">丘吉尔第二次世界大战回忆录</a>
+	   	   	  		<span>温斯顿·丘吉尔</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>6.</em>
+	   	   	  		<a href="#">雪中悍刀型</a>
+	   	   	  		<span>烽火戏诸侯</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>7.</em>
+	   	   	  		<a href="#">夏有乔木 雅望天堂</a>
+	   	   	  		<span>籽月/span>
+	   	   	  	</li>
+                <li>
+	   	   	  	    <em>8.</em>
+	   	   	  		<a href="#">明朝那些事儿</a>
+	   	   	  		<span>当年明月</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>9.</em>
+	   	   	  		<a href="#">嫌疑人X的献身</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>10.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  </ul>
+   	   	  </div>
+   	   	  <div class="bd bd-left">
+	   	   	  <div class="bd-head">
+	   	   	  	<h2>亚马逊热榜</h2>
+	   	   	  	<a href="#">更多</a>
+	   	   	  </div>
+	   	   	  <ul class="changxiao">
+	   	   	  	<li>
+	   	   	  	    <em>1.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>2.</em>
+	   	   	  		<a href="#">红顶商人胡雪岩（全六册）</a>
+	   	   	  		<span>高阳</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>3.</em>
+	   	   	  		<a href="#">解忧杂货店</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>4.</em>
+	   	   	  		<a href="#">古董局中局</a>
+	   	   	  		<span>马伯庸</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>5.</em>
+	   	   	  		<a href="#">丘吉尔第二次世界大战回忆录</a>
+	   	   	  		<span>温斯顿·丘吉尔</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>6.</em>
+	   	   	  		<a href="#">雪中悍刀型</a>
+	   	   	  		<span>烽火戏诸侯</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>7.</em>
+	   	   	  		<a href="#">夏有乔木 雅望天堂</a>
+	   	   	  		<span>籽月/span>
+	   	   	  	</li>
+                <li>
+	   	   	  	    <em>8.</em>
+	   	   	  		<a href="#">明朝那些事儿</a>
+	   	   	  		<span>当年明月</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>9.</em>
+	   	   	  		<a href="#">嫌疑人X的献身</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>10.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  </ul>
+   	   	  </div>
+   	   	  <div class="bd bd-right">
+   	   	  	 <div class="bd-head">
+	   	   	  	<h2>京东热榜</h2>
+	   	   	  	<a href="#">更多</a>
+	   	   	  </div>
+	   	   	  <ul class="changxiao">
+	   	   	  	<li>
+	   	   	  	    <em>1.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>2.</em>
+	   	   	  		<a href="#">红顶商人胡雪岩（全六册）</a>
+	   	   	  		<span>高阳</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>3.</em>
+	   	   	  		<a href="#">解忧杂货店</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>4.</em>
+	   	   	  		<a href="#">古董局中局</a>
+	   	   	  		<span>马伯庸</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>5.</em>
+	   	   	  		<a href="#">丘吉尔第二次世界大战回忆录</a>
+	   	   	  		<span>温斯顿·丘吉尔</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>6.</em>
+	   	   	  		<a href="#">雪中悍刀型</a>
+	   	   	  		<span>烽火戏诸侯</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>7.</em>
+	   	   	  		<a href="#">夏有乔木 雅望天堂</a>
+	   	   	  		<span>籽月/span>
+	   	   	  	</li>
+                <li>
+	   	   	  	    <em>8.</em>
+	   	   	  		<a href="#">明朝那些事儿</a>
+	   	   	  		<span>当年明月</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>9.</em>
+	   	   	  		<a href="#">嫌疑人X的献身</a>
+	   	   	  		<span>东野圭吾</span>
+	   	   	  	</li>
+	   	   	  	<li>
+	   	   	  	    <em>10.</em>
+	   	   	  		<a href="#">三体（全三册）</a>
+	   	   	  		<span>刘慈欣</span>
+	   	   	  	</li>
+	   	   	  </ul>
+   	   	  </div>
+   	   </div>
+   </div>
+
+   <hr>	
+   <div class="footer">
+ 	 <div class="fo-left">
+ 	 	 <nav>
+ 	 	 	<a href="#">手机版</a><span>|</span>
+ 	 	 	<a href="#">关于我们</a><span>|</span>
+ 	 	 	<a href="#">联系我们</a><span>|</span>
+ 	 	 	<a href="#">商务合作</a>
+ 	 	 </nav>
+ 	 	 <div class="copyright">
+ 	 	 	<span>Copyright&copyduokan.com</span><a href="#">京ICP备10047083</a><a href="#">电复证字第01D010号</a>
+ 	 	 </div>
+ 	 </div>
+ 	 <div class="twotopic">
+ 	 	<a href="#"><img src="img/weibo2.jpg" style="width:45px;height:45px"></a>
+ 	 	<a href="#"><img src="img/weixin2.jpg"></a>
+ 	 </div>
+ 	 <div class="fo-right">
+ 	 	<h6>意见反馈</h6>
+ 	 	<a href="#">readerfeedback@duokan.com</a>
+ 	 </div>
+ </div>
+ <div class="toTop">
+   <img src="img/up.png">
+ </div>	
+</body>
+</html>

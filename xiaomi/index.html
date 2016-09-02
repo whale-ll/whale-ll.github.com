@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/duokan.css">
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/duokan.js"></script>
+</head>
+<body>
+ <div class="header">
+   <div class="m-header">
+ 	<div class="head-nav">
+ 		<nav class="m-nav">
+ 	       <a href="#">小米网</a><span>|</span>
+ 	       <a href="#">MIUI</a><span>|</span>
+ 	       <a href="#">米聊</a><span>|</span>
+ 	       <a href="#">游戏</a><span>|</span>
+ 	       <a class="on-a" href="#">多看阅读</a><span>|</span>
+ 	       <a href="#">云服务</a><span>|</span>
+ 	       <a href="#">小米网移动版</a>
+ 		</nav>
+ 	</div>
+ 	<ul class="head-right">
+ 		<li><a class="login" href="#">登录 /</a><a href="#">注册</a></li><li>|</li>
+ 		<li><a href="#">购物车</a></li><li>|</li>
+ 		<li class="onblock"><a href="#">关注</a>
+ 		    <div class="erweima">
+ 		       <table>
+ 		         <tbody>
+ 		         	<tr>
+ 		         		<td><img src="img/weixin1.png"><span>官方微信</span></td>
+ 		         		<td><img src="img/weibo.png"><span>官方微博</span></td>
+ 		         	</tr>
+ 		         </tbody>
+ 		      </table>
+ 		</li>
+ 		<li>|</li>
+ 		<li class="onlist"><a href="#">快速导航</a>
+             <ul class="boklist">
+             	<li><a href="">兑换码换书</a></li>
+             	<li><a href="">最新上架</a></li>
+             </ul>
+ 		</li>
+ 	</ul>
+   </div>
+ </div>
+   
+   <div class="banner">
+   	  <div class="ban-top">
+   	  	 <div class="ban-top-left">
+   	  	 	<img class="logopic" src="img/logo.png"><h2>多看阅读</h2>
+   	  	 </div>
+   	  	 <div class="ban-top-right">
+   	  	 	<input id="soubook" type="text" placeholder="搜索书名或作者">
+   	  	 </div>
+   	  </div>
+      <div class="ban-bot">
+      	<nav class="ban-nav">
+      		<a class="navstyle" href="#">首页</a>
+      		<a href="bangdan.html">榜单</a>
+      		<a href="shuping.html">书评</a>
+      		<a href="#">精品·免费</a>
+      		<a href="#">分类</a>
+      		<a href="#">客户端</a>
+      		<a href="#">论坛</a>
+      	</nav>
+      </div>
+   </div>	
+
+ <div class="container">
+    <div class="con">
+ 	   <div class="con-left">
+ 	      <h5>图书分类</h5>
+ 		  <ul class="con-left-list">
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">小说</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">经管</span><span class="num">7607</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">成功励志</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">人文社科</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">文学</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">计算机</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">历史</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">生活</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">动漫绘本</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">传记</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">杂志</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">原创文学</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">两性情感</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">自然科学</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">少儿</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">旅游</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">政治经济</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">艺术</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">法律</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli onlis"><a class="con-a" href="#">
+ 		  	 <span class="lable">教育</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">外籍</span><span class="num">12027</span></a></li>
+ 		  	 <li class="conli"><a class="con-a" href="#">
+ 		  	 <span class="lable">原版进口</span><span class="num">12027</span></a></li> 		  	 
+ 		  </ul>
+ 	   </div>
+ 	   <div class="con-cent">
+ 	   	   <div class="con-lunbo">
+ 	   	   	 <ul class="lunbo1">
+ 	   	   	 	<li class="lishow"><a href="#"><img src="img/l1.jpg"></a></li>
+ 	   	   	 	<li><a href="#"><img src="img/l2.jpg"></a></li>
+ 	   	   	 	<li><a href="#"><img src="img/l3.jpg"></a></li>
+ 	   	   	 	<li><a href="#"><img src="img/l4.jpg"></a></li>
+ 	   	   	 	<li><a href="#"><img src="img/l5.jpg"></a></li>
+ 	   	   	 	<li><a href="#"><img src="img/l6.jpg"></a></li>
+ 	   	   	 </ul>
+ 	   	   	 <div class="btn btn-left"><</div>
+ 	   	   	 <div class="btn btn-right">></div>
+ 	   	   	 <ul class="lunbo-num">
+ 	   	   	 	<li class="num-style"></li>
+ 	   	   	 	<li></li>
+ 	   	   	 	<li></li>
+ 	   	   	 	<li></li>
+ 	   	   	 	<li></li>
+ 	   	   	 	<li></li>
+ 	   	   	 </ul>
+ 	   	   </div>
+ 	   	   <div class="con-cent-2">
+ 	   	   	 <h5>重磅推荐</h5>
+ 	   	   	 <hr class="hrstyle">
+ 	   	   	 <div class="cent-2-left">
+ 	   	   	 	<img class="books" src="img/b1.jpg">
+ 	   	   	 	<div class="price">
+ 	   	   	 	    <b>￥49.9</b>
+ 	   	   	 	    <span>￥418.00</span>
+ 	   	   	 	</div>
+ 	   	   	 	<div class="booktxt">
+ 	   	   	 		<a class="bookname" href="#">世界文明史（全11册）</a>
+ 	   	   	 		<span> 【美】威尔·杜兰特</span>
+ 	   	   	 		<p>历时四十余年写就的旷世巨著，20世纪的《史记》，人类文明的《离骚》！</p>
+ 	   	   	 		<a class="book-btn" href="#">立即阅读</a>
+ 	   	   	 		
+ 	   	   	 	</div>
+ 	   	   	 </div>
+ 	   	   	 <div class="cent-2-right">
+ 	   	   	 	<img class="books" src="img/b2.jpg">
+                <div class="price">
+ 	   	   	 	    <b>￥59.9</b>
+ 	   	   	 	    <span>￥288.00</span>
+ 	   	   	 	</div>
+ 	   	   	 	<div class="booktxt">
+ 	   	   	 		<a class="bookname" href="#">木心作品集（共13册）</a>
+ 	   	   	 		<span> 木心</span>
+ 	   	   	 		<p>陈丹青极致推崇的木心先生，文学精品大集合！</p>
+ 	   	   	 		<a id="read" class="book-btn" href="#">立即阅读</a>
+ 	   	   	 	</div>
+ 	   	   	 </div>
+ 	   	   </div>
+ 	   	   <div class="con-cent-3">
+ 	   	   	 <div class="cent-3-txt">
+ 	   	   	 	 <h5>活动快讯</h5><a href="#">超级畅销的好书特价啦，戳此看看~</a>
+ 	   	   	 </div>
+ 	   	   </div>
+ 	   </div>
+ 	   <div class="con-right">
+ 	   	  <div class="con-right-1">
+ 	   	  	<h5>Hi 欢迎使用多看阅读</h5>
+ 	   	  	<p>跨平台/多设备同步阅读进度、笔记和图书，轻松实现云阅读。</p>
+ 	   	  	<a class="free-read" href="#">免费畅读</a>
+ 	   	  	<a class="duokan-login" href="#">登录</a>
+ 	   	  </div>
+ 	   	  <div class="con-right-2">
+ 	   	  	<h5>重磅新书</h5>
+ 	   	  	<p>国民励志女作家咪蒙，引爆新媒体阅读神话！9个爆品案例，互联网时代的制胜秘诀。你和精英的距离，只有薄薄的一张清单而已！“谜托邦”系列小说之二，揭秘“再生实验”的阴谋！</p>
+ 	   	  	<div class="small-lunbo">
+ 	   	  		<ul class="small-pics">
+ 	   	  			<li class="small-on"><a href="#"><img src="img/images/1_03.png"><span>环球人物</span></a></li>
+ 	   	  			<li><a href="#"><img src="img/images/1_06.png"><span>易中天中华史</span></a></li>
+ 	   	  			<li><a href="#"><img src="img/images/1_11.png"><span>诡面迷花</span></a></li>
+ 	   	  			<li><a href="#"><img src="img/images/1_12.png"><span>枪械知识</span></a></li>
+ 	   	  		</ul>
+ 	   	  	</div>
+ 	   	  </div>
+ 	   </div>
+   </div>	
+ </div>
+
+ <div class="mi-books">
+ 	<div class="bangdan">
+ 		<ul class="bangdan-nav">
+ 			<li class="bangli heiti">畅销榜</li>
+ 			<li class="line-style">|</li>
+ 			<li class="bangli">阅读榜</li>
+ 			<li class="line-style">|</li>
+ 			<li class="bangli">好评榜</li>
+ 		</ul>
+ 		<div class="jiantou">
+ 			<span></span>
+ 		</div>
+ 	   <div class="onbang">
+ 		<div class="bang bangdan1">		    
+ 			<ul class="bang-style">
+ 				<li>1、<img src="img/bang.jpg"><a href="#">魔鬼经济学</a><span class="first-s">【美】史蒂文·列维特</span></li>
+ 				<li>2、<a href="#">三体（全三册）</a><span>刘慈欣</span></li>
+ 				<li>3、<a href="#">战国·纵横</a><span>寒川子</span></li>
+ 				<li>4、<a href="#">季羡林集</a><span>季羡林</span></li>
+ 				<li>5、<a href="#">明朝那些事儿</a><span>当年明月</span></li>
+ 				<li>6、<a href="#">解忧杂货店</a><span>【日】东野圭吾</span></li>
+ 				<li>7、<a href="#">阿瑟·克拉克经典</a><span>【英】阿瑟·克拉克</span></li>
+ 				<li>8、<a href="#">古龙作品集</a><span>古龙</span></li>
+ 				<li>9、<a href="#">巴尔扎克作品集</a><span>【法】巴尔扎克</span></li>
+ 				<li>10、<a href="#">巴尔扎克作品集</a><span>【法】巴尔扎克</span></li>
+ 			</ul>
+ 		</div>
+ 		<div class="bang">
+ 			<ul class="bang-style">
+ 				<li>1、<img src="img/bang1.jpg"><a href="#">魔鬼经济学2</a><span class="first-s">【美】史蒂文·列维特</span></li>
+ 				<li>2、<a href="#">最好的我们</a><span>刘慈欣</span></li>
+ 				<li>3、<a href="#">诗经</a><span>寒川子</span></li>
+ 				<li>4、<a href="#">金庸全集</a><span>季羡林</span></li>
+ 				<li>5、<a href="#">唐诗三百首</a><span>当年明月</span></li>
+ 				<li>6、<a href="#">伤心咖啡馆之歌</a><span>【日】东野圭吾</span></li>
+ 				<li>7、<a href="#">老人与海</a><span>【英】阿瑟·克拉克</span></li>
+ 				<li>8、<a href="#">古龙作品集</a><span>古龙</span></li>
+ 				<li>9、<a href="#">巴尔扎克作品集</a><span>【法】巴尔扎克</span></li>
+ 				<li>10、<a href="#">呼啸山庄</a><span>【法】巴尔扎克</span></li>
+ 			</ul>
+ 		</div>
+ 		<div class="bang">
+ 			<ul class="bang-style">
+ 				<li>1、<img src="img/bang2.jpg"><a href="#">魔鬼经济学3</a><span class="first-s">【美】史蒂文·列维特</span></li>
+ 				<li>2、<a href="#">中华上下五千年</a><span>刘慈欣</span></li>
+ 				<li>3、<a href="#">山海经</a><span>寒川子</span></li>
+ 				<li>4、<a href="#">王小波全集</a><span>季羡林</span></li>
+ 				<li>5、<a href="#">亲爱的提奥</a><span>当年明月</span></li>
+ 				<li>6、<a href="#">白夜行</a><span>【日】东野圭吾</span></li>
+ 				<li>7、<a href="#">傲慢与偏见</a><span>【英】阿瑟·克拉克</span></li>
+ 				<li>8、<a href="#">沉默</a><span>古龙</span></li>
+ 				<li>9、<a href="#">深河</a><span>【法】巴尔扎克</span></li>
+ 				<li>10、<a href="#">巴尔扎克作品集</a><span>【法】巴尔扎克</span></li>
+ 			</ul>
+ 		</div>
+ 	   </div>	
+ 	</div>
+ 	<div class="book-list">
+ 		<div class="book-list-1">
+ 			<h5>精品推荐</h5>
+ 			<a href="#">查看更多>></a>
+ 		</div>
+ 		<div class="book-list-2">
+ 		    <ul class="mi-book-list">
+ 		    	<li><a href="#"><img src="img/image/m03.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m05.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m07.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m09.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m15.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m16.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m17.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m18.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m03.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m05.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m07.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m09.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m15.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+ 		    	<li><a href="#"><img src="img/image/m16.png">冯唐作品集（共7册）</a><span>冯唐</span>
+ 		    	<div class="price"><em>￥27.99</em><del>￥73.00</del></div></li>
+
+ 		    </ul>
+ 			
+ 		</div>
+ 	</div>
+ </div>
+
+ <hr>
+ <div class="four-book">
+ 	<a href="#"><img src="img/m1.jpg"></a>
+ 	<a href="#"><img src="img/m2.jpg"></a>
+ 	<a href="#"><img src="img/m3.jpg"></a>
+ 	<a href="#"><img src="img/m4.jpg"></a> 	
+ </div>
+ <hr id="shadows">
+
+ <div class="book-market">
+ 	<div class="market-list">
+ 		<h5>书评广场</h5><a href="#">更多>></a>
+ 		
+ 		<span class="m-btn next">>></span>
+ 		<ul class="market-num">
+ 			<li class="ket-num-on"></li>
+ 			<li></li>
+ 			<li></li>
+ 			<li></li>
+ 		</ul>
+ 		<span class="m-btn prev"><<</span>
+ 	</div>
+    <div class="market-pics">
+    	<div class="move-pics">
+    		<ul class="moves">
+    			<li>
+    				<div class="mo"><img src="img/mak/p_05.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_03.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_07.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_12.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_13.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_14.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    		</ul>
+    		<ul class="moves">
+    			<li>
+    				<div class="mo"><img src="img/b1.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店2</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/b2.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/b1.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/b2.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_13.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_14.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    		</ul>
+    		<ul class="moves">
+    			<li>
+    				<div class="mo"><img src="img/mak/p_05.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店3</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_03.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_07.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_12.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_13.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_14.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    		</ul>
+    		<ul class="moves">
+    			<li>
+    				<div class="mo"><img src="img/b1.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店4</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/b2.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/b1.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/b2.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/b1.jpg"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_14.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    		</ul>
+    		<ul class="moves">
+    			<li>
+    				<div class="mo"><img src="img/mak/p_05.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_03.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_07.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_12.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_13.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    			<li>
+    				<div class="mo"><img src="img/mak/p_14.png"></div>
+    				<div class="mo-txt"><a href="#"><b>解忧杂货店</b><p>“这么多年咨询信看下来，逐渐明白，很多时候，咨询的人心里已经有了答案,来咨询只是想确认自己的决定是对的。”浪矢爷爷总是很认真地回复别人的问题，哪怕是恶作</p></a></div>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+ </div>
+ 
+ <hr>
+ <div class="four-book">
+ 	<a href="#"><img src="img/f1.jpg"></a>
+ 	<a href="#"><img src="img/f2.jpg"></a>
+ 	<a href="#"><img src="img/f3.jpg"></a>
+ 	<a href="#"><img src="img/f4.png"></a> 	
+ </div>
+ <hr id="shadows">
+
+ <div class="footer">
+ 	 <div class="fo-left">
+ 	 	 <nav>
+ 	 	 	<a href="#">手机版</a><span>|</span>
+ 	 	 	<a href="#">关于我们</a><span>|</span>
+ 	 	 	<a href="#">联系我们</a><span>|</span>
+ 	 	 	<a href="#">商务合作</a>
+ 	 	 </nav>
+ 	 	 <div class="copyright">
+ 	 	 	<span>Copyright&copyduokan.com</span><a href="#">京ICP备10047083</a><a href="#">电复证字第01D010号</a>
+ 	 	 </div>
+ 	 </div>
+ 	 <div class="twotopic">
+ 	 	<a href="#"><img src="img/weibo2.jpg" style="width:45px;height:45px"></a>
+ 	 	<a href="#"><img src="img/weixin2.jpg"></a>
+ 	 </div>
+ 	 <div class="fo-right">
+ 	 	<h6>意见反馈</h6>
+ 	 	<a href="#">readerfeedback@duokan.com</a>
+ 	 </div>
+ </div>
+</body>
+</html>
